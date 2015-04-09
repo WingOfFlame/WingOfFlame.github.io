@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+tabname {
+	font-size:16px;
+	display:block;
+	font-weight:500;
+}
+.media {
+	margin-left:8px;
+	margin-right:8px;
+}
+.collapseBlock {
+	padding-left:40px;
+	padding-right:16px;
+	width:90%;
+}
+.experienceBlock {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 16px;
+	padding-bottom: 8px;
+}
+jobtitle {
+	font-size:18px;
+	font-weight:700;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	line-height:1.1;
+	display:block;
+}
+company {
+	font-size:16px;
+	font-weight:500;
+	display:block;
+}
+timespan {
+	font-size:14px;
+	font-weight:500;
+	font-style:italic;
+}
+.indentBlock {
+	padding-top:8px;
+}
+
+ul.nav-tabs.affix{
+	top: 15px; /* Set the top position of pinned element */
+    position: fixed;
+    width: 226px;
+}
