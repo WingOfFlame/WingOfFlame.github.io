@@ -1,289 +1,509 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/mustache.min.js" type="text/javascript"></script>
-        <script src="js/main.js" type="text/javascript"></script>
-        <title>Justin Hu's Page</title>
-    </head>
-    <body data-spy="scroll" data-target="#myScrollspy">
-        <!--panel-->
-        <div class="panel panel-body" style="margin-left: auto; margin-right: auto; min-width: 40%; max-width: 60%">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="css/main.css">
+      <script src="js/bootstrap.min.js" type="text/javascript"></script>
+      <script src="js/mustache.min.js" type="text/javascript"></script>
+      <script src="js/main.js" type="text/javascript"></script>
+      <title>Justin Hu's Page</title>
+   </head>
+   <body data-spy="scroll" data-target="#myScrollspy">
+      <div class="wrapper">
+         <!--panel-->
+         <div class="panel panel-body" style="margin-left: auto; margin-right: auto; min-width: 40%; max-width: 60%">
             <!--panel heading-->
             <div id="header" class="page-header">
-                <h1>Justin Hu</h1>
+               <h1>Justin Hu</h1>
             </div>
             <!--panel body-->
             <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-                <!--tabs-->
-                <ul id="myTab" class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active">
-                        <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
-                            <tabname>Home</tabname>
-                        </a>
-                    </li>
-                    <li role="presentation" class="">
-                        <a href="#resume" role="tab" id="resume-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">
-                            <tabname>Resume</tabname>
-                        </a>
-                    </li>
-                    <li role="presentation" class="">
-                        <a href="#code" role="tab" id="code-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">
-                            <tabname>Code</tabname>
-                        </a>
-                    </li>
-                </ul>
-                <!--tab contents-->
-                <div id="myTabContent" class="tab-content" style="margin-top: 20px;">
-                    <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+               <!--tabs-->
+               <ul id="myTab" class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active">
+                     <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+                        <tabname>
+                           <h4>Home</h4>
+                        </tabname>
+                     </a>
+                  </li>
+                  <li role="presentation" class="">
+                     <a href="#resume" role="tab" id="resume-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">
+                        <tabname>
+                           <h4>Resume</h4>
+                        </tabname>
+                     </a>
+                  </li>
+                  <li role="presentation" class="">
+                     <a href="#code" role="tab" id="code-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">
+                        <tabname>
+                           <h4>Code</h4>
+                        </tabname>
+                     </a>
+                  </li>
+               </ul>
+               <!--tab contents-->
+               <div id="myTabContent" class="tab-content" style="margin-top: 20px;">
+                  <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+                     <div style="width: 70%; float: left;">
                         <div class="media">
-                            <div class="media-left" style="width: 30%; height: auto; min-width: 200px;">
-                                <img class="media-object img-responsive img-rounded" src="src/img/Koala.jpg" alt="Koala" style="width:100%; height:auto;">
-                            </div>
-                            <div class="media-body" style="padding: 0px 10px 10px 10px">
-                                <h2 class="media-heading">
-                                    <span>Hello, World!</span>
-                                </h2>
-                                <p>
-                                    <strong>
-                                    <del>
-                                    I'M A PROGRAMMAR.<br />
-                                    I'M A PROGRAMER.<br />
-                                    I'M A PROGRAMMOR.<br />
-                                    </del>
-                                    <br />
-                                    I WRITE CODE.<br />
-                                    </strong>
-                                </p>
-                                <button type="button" id="resumeButton" class="btn btn-default" aria-label="Left Align" style="background-image: none; color: #337ab7"> <span class="glyphicon glyphicon-list-alt" aria-hidden="true" style="padding-right: 5px;"></span> MY RESUME </button>
-                            </div>
+                           <div class="media-left" style="width: 40%;height: auto; min-width: 200px;">
+                              <img class="media-object img-responsive img-rounded" src="src/img/Koala.jpg" alt="Koala" style="width: 100%; height: auto;">
+                           </div>
+                           <div class="media-body" style="width: 60%; padding:10px; text-align: center">
+                              <h1 class="media-heading">
+                                 <span>Hello, World!</span>
+                              </h1>
+                              <h4>
+                                 <del>
+                                 I'M A PROGRAMMAR.<br />
+                                 I'M A PROGRAMER.<br />
+                                 I'M A PROGRAMMOR.<br />
+                                 </del>
+                              </h4>
+                              <h3>I write code.</h3>
+                              <br />
+                              <button type="button" id="resumeButton" class="btn btn-default" aria-label="Left Align" style="background-image: none; color: #337ab7"> <span class="glyphicon glyphicon-list-alt" aria-hidden="true" style="padding-right: 5px;"></span> MY RESUME </button>
+                           </div>
                         </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="resume" aria-labelledby="resume-tab">
-                        <div id="resumeBody">
-                            <div id="resumeLeft" style="width: 70%; float: left; padding-right: 10px">
-                                <div id="resumeSections">
-                                    <div id="resumeHighlights" class="panel panel-default">
-                                        <h4><a data-toggle="collapse" data-target="#collapseHighlights" aria-expanded="false" aria-controls="collapseHighlights" class="panel-heading "> <span class="glyphicon glyphicon-menu-hamburger"></span> Highlights </a></h4>
-                                        <div class="collapse" id="collapseHighlights">
-                                            <div>
-                                                <ul class="">
-                                                    <li>Skilled in Java, C/ C++, Scheme, Python, Turing, HTML, Unix Shell</li>
-                                                    <li>Eager, adaptable, quick learner who is always willing to face new challenges</li>
-                                                    <li>Highly effective independent worker and a strong team contributor</li>
-                                                    <li>Ability to consistently meet deadlines, exceed expectations and work under pressure</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="resumeEducation" class="panel panel-default">
-                                    <h4><a data-toggle="collapse" data-target="#collapseEducation" aria-expanded="false" aria-controls="collapseEducation" class="panel-heading "> <span class="glyphicon glyphicon-menu-hamburger"></span> Education </a></h4>
-                                    <div class="collapse" id="collapseEducation">
-                                        <div class="collapseBlock">
-                                            <span>
-                                                <jobtitle>University of Waterloo</jobtitle>
-                                            </span>
-                                            <timespan>2012 - present</timespan>
-                                            <span>
-                                                <p>Bachelor of Computer Science, Honours, Co-operative Program</p>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="resumeExperience" class="panel panel-default">
-                                    <h4><a data-toggle="collapse" data-target="#collapseExperience" aria-expanded="false" aria-controls="collapseExperience" class="panel-heading "> <span class="glyphicon glyphicon-menu-hamburger"></span> Work experience </a></h4>
-                                    <div class="collapse" id="collapseExperience">
-                                        <div class="collapseBlock">
-                                            <div class="experienceBlock">
-                                                <span>
-                                                    <jobtitle>Test Analyst</jobtitle>
-                                                </span>
-                                                <span>
-                                                    <company>CIBC Retail Markets,Internet Channel, Quality Assurance</company>
-                                                </span>
-                                                <span>
-                                                    <timespan>May 2014 – August 2014 (4 months)</timespan>
-                                                </span>
-                                                <div class="indentBlock">
-                                                    <ul>
-                                                        <li>
-                                                            <p>Defined test cases required for a project based on use cases, business requirements and internet design specifications with coaching from a QA </p>
-                                                        </li>
-                                                        <li>
-                                                            <p>Executed test scripts efficiently</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>Provided coaching to new contractors, as well as other co-ops</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>Identified, logged and retested variances encountered during testing cycles.</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>Provided regular daily testing status updates to QA </p>
-                                                        </li>
-                                                        <li>
-                                                            <p>Created documentations for process improvements, adopted by a team of 30</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="experienceBlock">
-                                                <span>
-                                                    <jobtitle>Security System Analyst</jobtitle>
-                                                </span>
-                                                <span>
-                                                    <company>The Canadian Depository for Securities Limited (CDS)</company>
-                                                </span>
-                                                <timespan>May 2013 – August 2013 (4 months)</timespan>
-                                                <div class="indentBlock">
-                                                    <ul>
-                                                        <li>Ensured all system access activity complied with Logical Access Administration procedures</li>
-                                                        <li>
-                                                            Monitored all access activity reports for potential exposures
-                                                            <ul>
-                                                                <li>Mainframe, Windows, UNIX and other Non-Host environments</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>Reviewed monitoring reports of over 300 pages per day to confirm authenticity and accuracy</li>
-                                                        <li>Informed over 350 users about their account credentials and escalated technical issue to Customer Service Center</li>
-                                                        <li>Assisted in the implementation of vulnerability scan and mailbox integration process</li>
-                                                        <li>Learned and worked independently without requiring extra instruction and supervision</li>
-                                                        <li>Assisted in internal Audit by&nbsp;gathering&nbsp;documentations required by Auditors</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="resumeRight" style="width: 30%; float: left; padding-left: 5px">
-                                <div id="resumeSkills" class="panel panel-default">
-                                    <div>
-                                        <h4><a data-toggle="collapse" href="#collapseSkills" aria-expanded="false" aria-controls="collapseSkills" class="panel-heading "> <span class="glyphicon glyphicon-menu-hamburger"></span> Skills</a></h4>
-                                    </div>
-                                    <div class="collapse" id="collapseSkills">
-                                        <div>
-                                            <ul>
-                                                <li>OOP</li>
-                                                <li>REST API</li>
-                                                <li>UI Design</li>
-                                                <li>Bash Script</li>
-                                                <li>Version Control</li>
-                                                <li>Unit Testing</li>
-                                                <li>UAT</li>
-                                                <li>Debug</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="resumeLanguages" class="panel panel-default">
-                                    <div>
-                                        <h4><a data-toggle="collapse" data-target="#collapseLanguages" aria-expanded="false" aria-controls="collapseLanguages" class="panel-heading "> <span class="glyphicon glyphicon-menu-hamburger"></span> Languages </a></h4>
-                                    </div>
-                                    <div class="collapse" id="collapseLanguages">
-                                        <div>
-                                            <ul>
-                                                <li>Java</li>
-                                                <li>C#</li>
-                                                <li>C/C++</li>
-                                                <li>JavaScript</li>
-                                                <li>HTML</li>
-                                                <li>SQL</li>
-                                                <li>Scheme</li>
-                                                <li>Turing</li>
-                                                <li>Bash</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="resumeHobbies" class="panel panel-default">
-                                    <div>
-                                        <h4><a data-toggle="collapse" href="#collapseHobbies" aria-expanded="false" aria-controls="collapseHobbies" class="panel-heading "> <span class="glyphicon glyphicon-menu-hamburger"></span> Hobbies </a></h4>
-                                    </div>
-                                    <div class="collapse" id="collapseHobbies">
-                                        <div>
-                                            <ul>
-                                                <li>Cooking</li>
-                                                <li>Gaming</li>
-                                                <li>Badminton</li>
-                                                <li>Anime</li>
-                                                <li>Reading</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="code" aria-labelledby="code-tab">
+                     </div>
+                     <div style="width: 30%; float: left;">
                         <div>
-                            <blockquote>
-                              <p>"Talk is cheap. Show me the code."</p>
-                              <footer>Torvalds, Linus</footer>
-                            </blockquote>
+                           <dl class="dl-horizontal">
+                              <dt>Interested In:</dt>
+                              <dd>
+                                 <p>Software Development</p>
+                                 <p>Mobile Application</p>
+                              </dd>
+                           </dl>
+                           <dl class="dl-horizontal">
+                              <dt>Cell:</dt>
+                              <dd>
+                                 <p>647-745-8948</p>
+                              </dd>
+                           </dl>
+                           <dl class="dl-horizontal">
+                              <dt>Email:</dt>
+                              <dd>
+                                 <p>huzg1994@msn.com</p>
+                              </dd>
+                           </dl>
+                           <dl class="dl-horizontal">
+                              <dt>GitHub:</dt>
+                              <dd>
+                                 <a href="https://github.com/WingOfFlame" target="_blank">github.com/WingOfFlame</a>
+                              </dd>
+                           </dl>
                         </div>
-
-
-
-      <!-- Begin page content -->
-      <div class="row">
-        <div class="col-md-8">
-          <div class="well" id="one">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
-          <div class="well" id="two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
-          <div class="well"id="three">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
-          <div class="well">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
-          <div class="well">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
-          <div class="well">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
-          <div class="well">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
-          <div class="well">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
-          <div class="well">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
-          <div class="well">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
-          <div class="well">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
-          <div class="well">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
-        </div>
-		<div class="col-md-4" id="myScrollspy">
-			<ul class="nav nav-tabs nav-stacked" data-spy="affix" id="myNav">
-				<li class="active"><a href="#one">Section One</a></li>
-				<li><a href="#two">Section Two</a></li>
-				<li><a href="#three">Section Three</a></li>
-			</ul>
-		</div>
-      </div>
-                        
-                    </div>
-                </div>
+                     </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="resume" aria-labelledby="resume-tab">
+                     <div id="resumeBody">
+                        <div id="resumeLeft" style="width: 70%; float: left; padding-right: 10px">
+                           <div id="resumeSections">
+                              <div id="resumeHighlights" class="panel panel-default">
+                                 <h4><a data-toggle="collapse" data-target="#collapseHighlights" aria-expanded="false" aria-controls="collapseHighlights" class="panel-heading "> <span class="glyphicon glyphicon-menu-hamburger"></span> Highlights </a></h4>
+                                 <div class="collapse" id="collapseHighlights">
+                                    <div>
+                                       <ul class="">
+                                          <li>Skilled in Java, C/ C++, Scheme, Python, Turing, HTML, Unix Shell</li>
+                                          <li>Eager, adaptable, quick learner who is always willing to face new challenges</li>
+                                          <li>Highly effective independent worker and a strong team contributor</li>
+                                          <li>Ability to consistently meet deadlines, exceed expectations and work under pressure</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="resumeEducation" class="panel panel-default">
+                              <h4><a data-toggle="collapse" data-target="#collapseEducation" aria-expanded="false" aria-controls="collapseEducation" class="panel-heading "> <span class="glyphicon glyphicon-menu-hamburger"></span> Education </a></h4>
+                              <div class="collapse" id="collapseEducation">
+                                 <div class="collapseBlock">
+                                    <p>
+                                       <span class="jobtitle">
+                                       University of Waterloo
+                                       </span>
+                                    </p>
+                                    <p>
+                                       <span class="timespan">
+                                       2012 - present
+                                       </span>
+                                    </p>
+                                    <p>
+                                       <span>
+                                       Bachelor of Computer Science, Honours, Co-operative Program
+                                       </span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="resumeExperience" class="panel panel-default">
+                              <h4><a data-toggle="collapse" data-target="#collapseExperience" aria-expanded="false" aria-controls="collapseExperience" class="panel-heading "> <span class="glyphicon glyphicon-menu-hamburger"></span> Work experience </a></h4>
+                              <div class="collapse" id="collapseExperience">
+                                 <div class="collapseBlock">
+                                    <div class="experienceBlock">
+                                       <p>
+                                          <span class="jobtitle">
+                                          Test Analyst
+                                          </span>
+                                       <p>
+                                          <span class="company">
+                                          CIBC Retail Markets,Internet Channel, Quality Assurance
+                                          </span>
+                                       </p>
+                                       <p>
+                                          <span class="timespan">
+                                          May 2014 – August 2014 (4 months)
+                                          </span>
+                                       </p>
+                                       <div class="indentBlock">
+                                          <ul>
+                                             <li>
+                                                <p>Defined test cases required for a project based on use cases, business requirements and internet design specifications with coaching from a QA </p>
+                                             </li>
+                                             <li>
+                                                <p>Executed test scripts efficiently</p>
+                                             </li>
+                                             <li>
+                                                <p>Provided coaching to new contractors, as well as other co-ops</p>
+                                             </li>
+                                             <li>
+                                                <p>Identified, logged and retested variances encountered during testing cycles.</p>
+                                             </li>
+                                             <li>
+                                                <p>Provided regular daily testing status updates to QA </p>
+                                             </li>
+                                             <li>
+                                                <p>Created documentations for process improvements, adopted by a team of 30</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="experienceBlock">
+                                       <p>
+                                          <span class="jobtitle">
+                                          Security System Analyst
+                                          </span>
+                                       </p>
+                                       <p>
+                                          <span class="company">
+                                          The Canadian Depository for Securities Limited (CDS)
+                                          </span>
+                                       </p>
+                                       <p>
+                                          <span class="timespan">
+                                          May 2013 – August 2013 (4 months)
+                                          </span>
+                                       </p>
+                                       <div class="indentBlock">
+                                          <ul>
+                                             <li>Ensured all system access activity complied with Logical Access Administration procedures</li>
+                                             <li>
+                                                Monitored all access activity reports for potential exposures
+                                                <ul>
+                                                   <li>Mainframe, Windows, UNIX and other Non-Host environments</li>
+                                                </ul>
+                                             </li>
+                                             <li>
+                                                <p>Reviewed monitoring reports of over 300 pages per day to confirm authenticity and accuracy</p>
+                                             </li>
+                                             <li>
+                                                <p>Informed over 350 users about their account credentials and escalated technical issue to Customer Service Center</p>
+                                             </li>
+                                             <li>
+                                                <p>Assisted in the implementation of vulnerability scan and mailbox integration process</p>
+                                             </li>
+                                             <li>
+                                                <p>Learned and worked independently without requiring extra instruction and supervision</p>
+                                             </li>
+                                             <li>
+                                                <p>Assisted in internal Audit by&nbsp;gathering&nbsp;documentations required by Auditors</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="resumeRight" style="width: 30%; float: left; padding-left: 5px">
+                           <div id="resumeSkills" class="panel panel-default">
+                              <div>
+                                 <h4><a data-toggle="collapse" href="#collapseSkills" aria-expanded="false" aria-controls="collapseSkills" class="panel-heading "> <span class="glyphicon glyphicon-menu-hamburger"></span> Skills</a></h4>
+                              </div>
+                              <div class="collapse" id="collapseSkills">
+                                 <div>
+                                    <ul>
+                                       <li>OOP</li>
+                                       <li>REST API</li>
+                                       <li>UI Design</li>
+                                       <li>Bash Script</li>
+                                       <li>Version Control</li>
+                                       <li>Unit Testing</li>
+                                       <li>UAT</li>
+                                       <li>Debug</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="resumeLanguages" class="panel panel-default">
+                              <div>
+                                 <h4><a data-toggle="collapse" data-target="#collapseLanguages" aria-expanded="false" aria-controls="collapseLanguages" class="panel-heading "> <span class="glyphicon glyphicon-menu-hamburger"></span> Languages </a></h4>
+                              </div>
+                              <div class="collapse" id="collapseLanguages">
+                                 <div>
+                                    <ul>
+                                       <li>Java</li>
+                                       <li>C#</li>
+                                       <li>C/C++</li>
+                                       <li>JavaScript</li>
+                                       <li>HTML</li>
+                                       <li>SQL</li>
+                                       <li>Scheme</li>
+                                       <li>Turing</li>
+                                       <li>Bash</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="resumeHobbies" class="panel panel-default">
+                              <div>
+                                 <h4><a data-toggle="collapse" href="#collapseHobbies" aria-expanded="false" aria-controls="collapseHobbies" class="panel-heading "> <span class="glyphicon glyphicon-menu-hamburger"></span> Hobbies </a></h4>
+                              </div>
+                              <div class="collapse" id="collapseHobbies">
+                                 <div>
+                                    <ul>
+                                       <li>Cooking</li>
+                                       <li>Gaming</li>
+                                       <li>Badminton</li>
+                                       <li>Anime</li>
+                                       <li>Reading</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="code" aria-labelledby="code-tab">
+                     <div>
+                        <blockquote>
+                           <p>"Talk is cheap. Show me the code."</p>
+                           <footer>Torvalds, Linus</footer>
+                        </blockquote>
+                     </div>
+                     <!-- Begin page content -->
+                     <div class="row">
+                        <div class="col-md-9">
+                           <div class="bs-docs-section">
+                              <div id="One" class="page-header">
+                                 <h1>C++</h1>
+                              </div>
+                              <div class="panel panel-default" id="One-one">
+                                 <div class="panel-heading">
+                                    <h4>Carrot Guardian</h4>
+                                 </div>
+                                 <div class="panel-body">
+                                    <p>A Tower Defense & Action game.</p>
+                                    <p> player needs to expell rabbits with mouse clicking and protect the precious CARROT! </p>
+                                    <p>
+                                       <strong>Source Code: </strong><a href="https://github.com/WingOfFlame/ashpit/tree/master/Carrot%20Guardian" target="_blank">View on GitHub</a>
+                                    </p>
+                                    <h4><span class="label label-info">X11</span></h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="bs-docs-section">
+                              <div id="Two" class="page-header">
+                                 <h1>C#</h1>
+                              </div>
+                              <div class="panel panel-default" id="Two-one">
+                                 <div class="panel-heading">
+                                    <h4>Device Property</h4>
+                                 </div>
+                                 <div class="panel-body">
+                                    <p>Console application assisted by Benjamin Morris.</p>
+                                    <p>Fetches a list of all USB devices recognized by current Windows OS (Tested on Windows 7 and Windows 8).</p>
+                                    <p>
+                                       <strong>Source Code: </strong><a href="https://github.com/WingOfFlame/WuTong/tree/master/DeviceProperty_CS" target="_blank">View on GitHub</a>
+                                    </p>
+                                    <h4><span class="label label-info">Win32 API</span> <span class="label label-info">PInvoke</span></h4>
+                                 </div>
+                              </div>
+                              <div class="panel panel-default" id="Two-two">
+                                 <div class="panel-heading">
+                                    <h4>Xamarin Examples</h4>
+                                 </div>
+                                 <div class="panel-body">
+                                    <p>Cross-platform Mobile App</p>
+                                    <p>Examples of non-trival Xamarin controls and platform specific extensions.</p>
+                                    <p>
+                                       <strong>Source Code: </strong><a href="https://github.com/WingOfFlame/XamarinExample" target="_blank">View on GitHub</a>
+                                    </p>
+                                    <h4><span class="label label-info">Xamarin.Forms</span> <span class="label label-info">iOS App</span> <span class="label label-info">Android App</span> <span class="label label-info">Windows Phone App</span></h4>
+                                 </div>
+                              </div>
+                              <div class="panel panel-default" id="Two-three">
+                                 <div class="panel-heading">
+                                    <h4>XML Parser</h4>
+                                 </div>
+                                 <div class="panel-body">
+                                    <p>A Web Application</p>
+                                    <p>Receives XML and XSD, and outputs viewmodels with value and type definition. Viewmodels can be further rendered into HTML controls.</p>
+                                    <p>
+                                       <strong>Source Code: </strong>Unavailable
+                                    </p>
+                                    <h4><span class="label label-info">MVVC</span> <span class="label label-info">XML</span> <span class="label label-info">XSD</span></h4>
+                                 </div>
+                              </div>
+                              <div class="panel panel-default" id="Two-four">
+                                 <div class="panel-heading">
+                                    <h4>Reference Data Service</h4>
+                                 </div>
+                                 <div class="panel-body">
+                                    <p>RESTful web service</p>
+                                    <p>Provides reference data from database. </p>
+                                    <p>
+                                       <strong>Source Code: </strong>Unavailable
+                                    </p>
+                                    <h4><span class="label label-info">ASP.NET</span> <span class="label label-info">REST</span> <span class="label label-info">Microsoft SQL Server</span></h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="bs-docs-section">
+                              <div id="Three" class="page-header">
+                                 <h1>Java</h1>
+                              </div>
+                              <div class="panel panel-default" id="Three-one">
+                                 <div class="panel-heading">
+                                    <h4>Jotto</h4>
+                                 </div>
+                                 <div class="panel-body">
+                                    <p>Word puzzle</p>
+                                    <p>Guessing a 5-letter word within 10 attempts. Very similar to Hangman in my personal opinion but less violent.</p>
+                                    <p>
+                                       <strong>Source Code: </strong><a href="https://github.com/WingOfFlame/ashpit/tree/master/Jotto" target="_blank">View on GitHub</a>
+                                    </p>
+                                    <h4><span class="label label-info">GUI</span> <span class="label label-info">MVC</span></h4>
+                                 </div>
+                              </div>
+                              <div class="panel panel-default" id="Three-two">
+                                 <div class="panel-heading">
+                                    <h4>Reversi</h4>
+                                 </div>
+                                 <div class="panel-body">
+                                    <p>2-player board game. Also known as Othello.</p>
+                                    <p>Players take turn to place disks and try to convert enemy disks into his own. When the board is full, the player with most disks wins the game. Can be played with another human or against bot.</p>
+                                    <p><strong>Source Code: </strong><a href="https://github.com/WingOfFlame/ashpit/tree/master/Reversi" target="_blank">View on GitHub</a></p>
+                                    <h4><span class="label label-info">AI</span> <span class="label label-info">UI Thread</span></h4>
+                                 </div>
+                              </div>
+                              <div class="panel panel-default" id="Three-three">
+                                 <div class="panel-heading">
+                                    <h4>Screen Saver</h4>
+                                 </div>
+                                 <div class="panel-body">
+                                    <p>A GUI application that can serve as screen saver</p>
+                                    <p>Displays 2D animated rotation of simple shapes when mouse is outside the window. When mouse enters the window, animation is stopped and user can edit the shapes to change their color, shape, rotation speed and etc.</p>
+                                    <p><strong>Source Code: </strong><a href="https://github.com/WingOfFlame/ashpit/tree/master/ScreenSaver" target="_blank">View on GitHub</a></p>
+                                    <h4><span class="label label-info">Affine Transformation</span></h4>
+                                 </div>
+                              </div>
+                              <div class="panel panel-default" id="Three-four">
+                                 <div class="panel-heading">
+                                    <h4>Course Description</h4>
+                                 </div>
+                                 <div class="panel-body">
+                                    <p>An Android native app</p>
+                                    <p>Consuming Waterloo Api V2, and returns course description for input course code.</p>
+                                    <p>Source code unavailable</p>
+                                    <h4><span class="label label-info">Android App</span> <span class="label label-info">REST API</span></h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="bs-docs-section">
+                              <div id="Four" class="page-header">
+                                 <h1>HTML/CSS/JS</h1>
+                              </div>
+                              <div class="panel panel-default" id="Four-one">
+                                 <div class="panel-heading">
+                                    <h4>Exam Scheduler</h4>
+                                 </div>
+                                 <div class="panel-body">
+                                    <p>A web widget</p>
+                                    <p>Helps student to organize and prioritize tasks and chores during exam week. (Needs access to student's exam shcedule provided by The University of Waterloo)</p>
+                                    <p><strong>Source Code: </strong><a href="https://github.com/WingOfFlame/ashpit/tree/master/ExamScheduler" target="_blank">View on GitHub</a>
+                                    </p>
+                                    <h4><span class="label label-info">Bootstrap</span> <span class="label label-info">{{Mustache}}</span> <span class="label label-info">jQuery</span></h4>
+                                 </div>
+                              </div>
+                              <div class="panel panel-default" id="Four-two">
+                                 <div class="panel-heading">
+                                    <h4>GitHub Page</h4>
+                                 </div>
+                                 <div class="panel-body">
+                                    <p>My personal page</p>
+                                    <p>You are looking at it.</p>
+                                    <p><strong>Source Code: </strong><a href="https://github.com/WingOfFlame/WingOfFlame.github.io" target="_blank">View on GitHub</a></p>
+                                    <h4><span class="label label-info">Bootstrap</span></h4>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-3 bs-docs-sidebar">
+                           <nav id="sidebar">
+                              <ul class="nav nav-stacked">
+                                 <li>
+                                    <a href="#One">C++</a>
+                                    <ul class="nav nav-stacked">
+                                       <li><a href="#One-one">Carrot Guardian</a></li>
+                                    </ul>
+                                 </li>
+                                 <li>
+                                    <a href="#Two">C#</a>
+                                    <ul class="nav nav-stacked">
+                                       <li><a href="#Two-one">Device Property</a></li>
+                                       <li><a href="#Two-two">Xamarin Examples</a></li>
+                                       <li><a href="#Two-three">XML Parser</a></li>
+                                       <li><a href="#Two-four">Reference Data Service</a></li>
+                                    </ul>
+                                 </li>
+                                 <li>
+                                    <a href="#Three">Java</a>
+                                    <ul class="nav nav-stacked">
+                                       <li><a href="#Three-one">Jotto</a></li>
+                                       <li><a href="#Three-two">Reversi</a></li>
+                                       <li><a href="#Three-three">Screen Saver</a></li>
+                                       <li><a href="#Three-four">Course Description</a></li>
+                                    </ul>
+                                 </li>
+                                 <li>
+                                    <a href="#Four">HTML/CSS/JS</a>
+                                    <ul class="nav nav-stacked">
+                                       <li><a href="#Four-one">Exam Scheduler</a></li>
+                                       <li><a href="#Four-two">GitHub Page</a></li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                              <a class="back-to-top" href="#header">
+                              Back to top
+                              </a>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-        
-    </body>
+         </div>
+      </div>
+      <footer class="footer">
+         <div class="container">
+            <p class="text-muted">Powered by GitHub and Bootstrap.</p>
+            <p class="text-muted">Copyright &copy; 2015 Justin Hu</p>
+         </div>
+      </footer>
+   </body>
 </html>
