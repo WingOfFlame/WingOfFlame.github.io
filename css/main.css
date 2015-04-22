@@ -1,7 +1,23 @@
 @charset "utf-8";
 /* CSS Document */
 
-tabname {
+
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+	height: 100%;
+	margin: 0 auto -60px; /* the bottom margin is the negative value of the footer's height */
+    padding-bottom: 20px;
+}
+.footer, .push {
+	height: 60px; /* .push must be the same height as .footer */
+    text-align: center;
+}
+
+.tabname {
 	font-size:16px;
 	display:block;
 	font-weight:500;
@@ -20,7 +36,7 @@ tabname {
 	margin-bottom: 16px;
 	padding-bottom: 8px;
 }
-jobtitle {
+.jobtitle {
 	font-size:18px;
 	font-weight:700;
 	margin-top: 8px;
@@ -28,12 +44,12 @@ jobtitle {
 	line-height:1.1;
 	display:block;
 }
-company {
+.company {
 	font-size:16px;
 	font-weight:500;
 	display:block;
 }
-timespan {
+.timespan {
 	font-size:14px;
 	font-weight:500;
 	font-style:italic;
@@ -41,9 +57,74 @@ timespan {
 .indentBlock {
 	padding-top:8px;
 }
+#sidebar.affix {
+    top: 15px;
+	width: 226px;
+}
 
-ul.nav-tabs.affix{
-	top: 15px; /* Set the top position of pinned element */
-    position: fixed;
-    width: 226px;
+.bs-docs-section {
+    margin-bottom: 60px;
+}
+/* sidebar */
+.bs-docs-sidebar {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+    color: #999;
+    border-left: 2px solid transparent;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* nested links */
+.bs-docs-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>li>a:hover, 
+.bs-docs-sidebar .nav>li>a:focus {
+    color: #337ab7;                 
+    text-decoration: none;          
+    background-color: transparent;  
+    border-left-color: #337ab7; 
+}
+/* all active links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    font-weight: 700;
+}
+/* nested active links */
+.bs-docs-sidebar .nav .nav>.active>a, 
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+    display: none;           
+}
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+    display: block;           
+}
+.back-to-top {
+  display: block;
+  padding: 4px 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
 }
