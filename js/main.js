@@ -9,11 +9,17 @@ $(document).ready(function(){
     	$('#myTab a[href="#resume"]').tab('show')
   	});
 	
-	$("#myNav").affix({
-        offset: { 
-            top: 280 
-     	}
-    });
+
+	$('body').scrollspy({
+    target: '.bs-docs-sidebar',
+    offset: 40
+	});
+	
+	$("#sidebar").affix({
+		offset: {
+		  top: 300
+		}
+	});
 });
 
 
