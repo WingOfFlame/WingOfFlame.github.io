@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-
+/* General */
 html, body {
 	height: 100%;
 }
@@ -22,15 +22,26 @@ html, body {
 	display:block;
 	font-weight:500;
 }
-.media {
-	margin-left:8px;
-	margin-right:8px;
-}
+
+
+/* Resume Tab */
 .collapseBlock {
 	padding-left:40px;
 	padding-right:16px;
 	width:90%;
 }
+
+.panel-heading:after {
+	font-family: "Glyphicons Halflings";
+	content: "\e114";
+	float: left;
+    	margin-left: 15px;
+}
+
+.panel-heading.collapsed:after{
+	content: "\e080";
+}
+
 .experienceBlock {
 	border-bottom: 1px solid #eee;
 	margin-bottom: 16px;
@@ -57,6 +68,8 @@ html, body {
 .indentBlock {
 	padding-top:8px;
 }
+
+/* Side Bar*/
 #sidebar.affix {
     top: 15px;
 	width: 226px;
