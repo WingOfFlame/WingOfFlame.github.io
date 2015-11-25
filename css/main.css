@@ -31,14 +31,14 @@ html, body {
 	width:90%;
 }
 
-.panel-heading:after {
+a.panel-heading:after {
 	font-family: "Glyphicons Halflings";
 	content: "\e114";
 	float: left;
     	margin-left: 15px;
 }
 
-.panel-heading.collapsed:after{
+a.panel-heading.collapsed:after{
 	content: "\e080";
 }
 
@@ -67,6 +67,11 @@ html, body {
 }
 .indentBlock {
 	padding-top:8px;
+}
+
+.rating {
+	float:right;
+	width:30%
 }
 
 /* Side Bar*/
